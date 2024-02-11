@@ -1,10 +1,6 @@
-const intialState = {
-  balance: 0,
-  loan: 0,
-  loanPurpose: "",
-};
+import { createStore } from "redux";
+import accountReducer from "./Features/Account/AccountSlice";
 
-function reducer(state = intialState, action) {
-  switch (action.type) {
-  }
-}
+const store = createStore(accountReducer);
+
+export default store;
