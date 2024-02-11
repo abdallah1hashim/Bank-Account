@@ -1,10 +1,18 @@
-import "./styles.css";
+import CreateCustomer from "./CreateCustomer";
+import Customer from "./Customer";
+import AccountOperations from "./AccountOperations";
+import BalanceDisplay from "./BalanceDisplay";
 
-export default function App() {
+function App() {
   return (
-    <div className="App">
-      <h1>Hello CodeSandbox</h1>
-      <h2>Start editing to see some magic happen!</h2>
+    <div>
+      <h1>🏦 The React-Redux Bank ⚛️</h1>
+      <CreateCustomer />
+      <Customer />
+      <AccountOperations />
+      <BalanceDisplay />
     </div>
   );
 }
+
+export default App;
