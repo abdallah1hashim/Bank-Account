@@ -27,11 +27,11 @@ export default function CustomerReducer(state = intialState, action) {
 
 export function createCustomer(fullname, nationalId) {
   return {
-    type: "createCustomer",
+    type: "Customer/createCustomer",
     payload: { fullname, nationalId, createdAt: new Date().toISOString() },
   };
 }
 
 export function updateName(name) {
-  return { type: "updateName", payload: name };
+  return { type: "Customer/updateName", payload: name };
 }
